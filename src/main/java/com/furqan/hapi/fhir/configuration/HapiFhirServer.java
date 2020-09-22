@@ -5,11 +5,13 @@ import ca.uhn.fhir.rest.server.RestfulServer;
 import com.furqan.hapi.fhir.provider.PatientProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet(urlPatterns = "/fhir/r4/*")
+//@WebServlet(urlPatterns = "/fhir/r4/*")
+@Component
 public class HapiFhirServer extends RestfulServer {
 
     @Autowired
