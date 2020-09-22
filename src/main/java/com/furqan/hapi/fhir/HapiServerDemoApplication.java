@@ -4,12 +4,14 @@ import com.furqan.hapi.fhir.configuration.HapiFhirServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 @ServletComponentScan
-@SpringBootApplication
+@SpringBootApplication(exclude = {DispatcherServletAutoConfiguration.class})
 public class HapiServerDemoApplication {
 
     public static void main(String[] args) {

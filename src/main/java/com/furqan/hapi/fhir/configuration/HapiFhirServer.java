@@ -11,7 +11,8 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 
 //@Component
-@WebServlet(urlPatterns = "/fhir/r4/*")
+@WebServlet
+//@WebServlet(urlPatterns = {"/fhir/r4/*"}, loadOnStartup = 1)
 public class HapiFhirServer extends RestfulServer {
 
     @Autowired
