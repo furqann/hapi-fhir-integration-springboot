@@ -8,6 +8,7 @@
 - Java 14
 - HAPI FHIR 5.1.0
 
-## Setup
-
+## Useful Links
+[Switch Off Dispatcher Servlet](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto-switch-off-the-spring-mvc-dispatcherservlet)
+[Scanning for Servlets, Filters, & listeners](https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-embedded-container-servlets-filters-listeners-scanning)
  
