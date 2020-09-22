@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 
-//@WebServlet(urlPatterns = "/fhir/r4/*")
-@Component
+//@Component
+@WebServlet(urlPatterns = "/fhir/r4/*")
 public class HapiFhirServer extends RestfulServer {
 
     @Autowired
